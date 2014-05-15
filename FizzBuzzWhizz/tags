@@ -6,7 +6,9 @@
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 IsValidNumber	isValidArgus.py	/^class IsValidNumber:$/;"	c
 __init__	isValidArgus.py	/^  def __init__(self):$/;"	m	class:IsValidNumber
-analysisArgus	isValidArgus.py	/^  def analysisArgus(str):$/;"	m	class:IsValidNumber
-analysisNoptionArgus	isValidArgus.py	/^  def analysisNoptionArgus(str):$/;"	m	class:IsValidNumber
-argusValidity	isValidArgus.py	/^  def argusValidity(self):$/;"	m	class:IsValidNumber
+analysisArgus	isValidArgus.py	/^  def analysisArgus(self, argu):$/;"	m	class:IsValidNumber
+analysisNoptionArgus	isValidArgus.py	/^  def analysisNoptionArgus(self):$/;"	m	class:IsValidNumber
+argusValidity	isValidArgus.py	/^  def argusValidity(self, argu):$/;"	m	class:IsValidNumber
+createRelDict	isValidArgus.py	/^  def createRelDict(self):$/;"	m	class:IsValidNumber
 ivn	isValidArgus.py	/^ivn = IsValidNumber()$/;"	v
+optValidity	isValidArgus.py	/^  def optValidity(self, opt):$/;"	m	class:IsValidNumber
