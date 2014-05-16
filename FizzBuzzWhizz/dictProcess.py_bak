@@ -1,18 +1,18 @@
 # =============================================================================
-#    FileName: isValidArgus.py
+#    FileName: dictProcess.py
 #        Desc:
 #      Author: Marslo
 #       Email: marslo.jiao@gmail.com
 #     Created: 2014-05-15 11:28:32
 #     Version: 0.0.1
-#  LastChange: 2014-05-15 17:47:10
+#  LastChange: 2014-05-16 10:29:16
 #     History:
 #              0.0.1 | Marslo | init
 # =============================================================================
 
 import sys
 
-class IsValidNumber:
+class IsValidArgus:
   def __init__(self):
     sourcefile = sys.argv[0].replace('.\\', '')
     self.argulist = sys.argv[1:]
@@ -25,7 +25,7 @@ class IsValidNumber:
     self.__info_2nd = 'Please input the second number: '
     self.__info_3rd = 'Please input the third number: '
 
-    self.__error_nondigit = 'Error:\n\tThe value should be digit.\nCheck help by input: python ' + sourcefile + ' --help'
+    self.__error_nondigit = 'Error:\n\tThe value SHOULD and ONLY be Positive Integer\nCheck help by input: python ' + sourcefile + ' --help'
     self.__error_nonopts = 'Error:\n\tThe options is invalid.\nYou can check the valid options by input: python ' + sourcefile + ' --help'
     self.__error_errdig = 'Error:\n\tPlease input the Positive integers.'
 
@@ -40,24 +40,6 @@ class IsValidNumber:
                     '\nEXAMPLE' + \
                     '\n\tpython' + sourcefile + ' 3 5 7' + \
                     '\n\tpython' + sourcefile + ' --first=3 --second=5 --third=7'
-
-  def argusValidity(self, argu):
-    if argu.isdigit():
-      if 0 > int(argu):
-        return True
-      else:
-        print self.__error_errdig
-        exit(1)
-    else:
-      print self.__error_nondigit
-      exit(1)
-
-  def optValidity(self, opt):
-    if opt in self.rel.keys():
-      return True
-    else:
-      print self.__error_nonopts
-      exit(1)
 
   def createRelDict(self):
     if 0 == len(self.argulist):
@@ -79,6 +61,35 @@ class IsValidNumber:
 
     print self.rel
 
+  def argusValidity_bak(self, argu):
+    if argu.isdigit():
+      if 0 > int(argu):
+        return True
+      else:
+        print self.__error_errdig
+        exit(1)
+    else:
+      print self.__error_nondigit
+      exit(1)
+
+  def argusValidity(self, argu):
+    try:
+      if 0 < int(argu):
+        return True
+      else:                                 # For Nagtive Integer
+        print self.__error_nondigit
+        exit(1)
+    except:                                 # For Non-Integer and Float
+      print self.__error_nondigit
+      exit(1)
+
+  def optValidity(self, opt):
+    if opt in self.rel.keys():
+      return True
+    else:
+      print self.__error_nonopts
+      exit(1)
+
   def analysisArgus(self, argu):
     argu_key = argu.split('--')[-1].split('=')[0]
     argu_value = argu.split('=')[-1]
@@ -90,12 +101,23 @@ class IsValidNumber:
       print '-'*20
       print 'i is: ', i
       if self.argusValidity(i):
-        for pwd in self.passwd:
-          print [k for k, v in self.rel.items() if pwd == v['passwd']][0]
+        print '-'*20 + 'if' + '-'*20
+        print 'self.argulist: ', self.argulist
+        print 'self.passwd: ', self.passwd
+        try:
+          for pwd in self.passwd:
+            print '-'*20 + ' for ' + '-'*20
+            dkey = [k for k, v in self.rel.items() if pwd == v['passwd']][0]
+            print 'pwd: ', pwd
+            print 'dkey: ', dkey
+            print 'self.passwd.index(pwd): ', self.passwd.index(pwd)
+            print 'self.argulist[int(self.passwd.index(pwd))]: ',self.argulist[int(self.passwd.index(pwd))]
+            self.rel[dkey]['num'] = self.argulist[int(self.passwd.index(pwd))]
+        except:
+          pass
 
 
-
-ivn = IsValidNumber()
+ivn = IsValidArgus()
 ivn.createRelDict()
 # ivn.getArgus()
 
