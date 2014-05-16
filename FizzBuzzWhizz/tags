@@ -4,11 +4,17 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-IsValidNumber	isValidArgus.py	/^class IsValidNumber:$/;"	c
-__init__	isValidArgus.py	/^  def __init__(self):$/;"	m	class:IsValidNumber
-analysisArgus	isValidArgus.py	/^  def analysisArgus(self, argu):$/;"	m	class:IsValidNumber
-analysisNoptionArgus	isValidArgus.py	/^  def analysisNoptionArgus(self):$/;"	m	class:IsValidNumber
-argusValidity	isValidArgus.py	/^  def argusValidity(self, argu):$/;"	m	class:IsValidNumber
-createRelDict	isValidArgus.py	/^  def createRelDict(self):$/;"	m	class:IsValidNumber
-ivn	isValidArgus.py	/^ivn = IsValidNumber()$/;"	v
-optValidity	isValidArgus.py	/^  def optValidity(self, opt):$/;"	m	class:IsValidNumber
+FizzBuzzWhizz	generatePasswd.py	/^class FizzBuzzWhizz:$/;"	c
+IsValidArgus	dictProcess.py	/^class IsValidArgus:$/;"	c
+__init__	dictProcess.py	/^  def __init__(self):$/;"	m	class:IsValidArgus
+__init__	generatePasswd.py	/^  def __init__(self, rel, passwd):$/;"	m	class:FizzBuzzWhizz
+analysisArgus	dictProcess.py	/^  def analysisArgus(self, argu):$/;"	m	class:IsValidArgus
+analysisNoptionArgus	dictProcess.py	/^  def analysisNoptionArgus(self):$/;"	m	class:IsValidArgus
+argusValidity	dictProcess.py	/^  def argusValidity(self, argu):$/;"	m	class:IsValidArgus
+calcPwd	generatePasswd.py	/^  def calcPwd(self, item):$/;"	m	class:FizzBuzzWhizz
+createRelDict	dictProcess.py	/^  def createRelDict(self):$/;"	m	class:IsValidArgus
+fbw	mainFizzBuzzWhizz.py	/^    fbw = FizzBuzzWhizz(vargu.rel, vargu.passwd)$/;"	v
+generatePwdList	generatePasswd.py	/^  def generatePwdList(self):$/;"	m	class:FizzBuzzWhizz
+inputArgusProcess	dictProcess.py	/^  def inputArgusProcess(self):$/;"	m	class:IsValidArgus
+optValidity	dictProcess.py	/^  def optValidity(self, opt):$/;"	m	class:IsValidArgus
+vargu	mainFizzBuzzWhizz.py	/^    vargu = IsValidArgus()$/;"	v
