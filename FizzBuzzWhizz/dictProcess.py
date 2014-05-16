@@ -62,14 +62,13 @@ class IsValidArgus:
     argu_key = argu.split('--')[-1].split('=')[0]
     argu_value = argu.split('=')[-1]
     if self.optValidity(argu_key) and self.argusValidity(argu_value):
-      self.rel[argu_key] = argu_value
+      self.rel[argu_key] = int(argu_value)
 
   def analysisNoptionArgus(self):
-    print '-'*20
-    for argu in self.argulist:
+    for i in range(len(self.argulist)):
+      argu = self.argulist[i]
       if self.argusValidity(argu):
-        self.rel[self.passwd[int(self.argulist.index(argu))].lower()] = int(argu)
-    print self.rel
+        self.rel[self.passwd[i].lower()] = int(argu)
 
   def inputArgusProcess(self):
     try:
@@ -102,8 +101,9 @@ class IsValidArgus:
           i = i + 1
     self.analysisNoptionArgus()
 
+
 # ivn = IsValidArgus()
 # ivn.createRelDict()
-# print ivn.rel
+# print 'dictProcess.py: ', ivn.rel
 
 # vi:set tabstop=2 shiftwidth=2:

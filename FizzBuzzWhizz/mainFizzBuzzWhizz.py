@@ -16,7 +16,7 @@ from generatePasswd import FizzBuzzWhizz
 if __name__ == '__main__':
     vargu = IsValidArgus()
     vargu.createRelDict()
-    # print vargu.rel
+    print 'main: ', vargu.rel
 
     fbw = FizzBuzzWhizz(vargu.rel, vargu.passwd)
     fbw.generatePwdList()

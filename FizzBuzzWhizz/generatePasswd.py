@@ -23,7 +23,7 @@ class FizzBuzzWhizz:
     print self.rel
     print self.passwd
 
-    for item in range(1, 20):
+    for item in range(1, self.rel['scope']):
       self.pwdlist.append(str(self.calcPwd(item)))
       # print self.calcPwd(item)
 
