@@ -43,7 +43,9 @@ class IsValidArgus:
                     '\n\tpython' + sourcefile + ' 3 5 7' + \
                     '\n\tpython' + sourcefile + ' --whizz=8' + \
                     '\n\tpython' + sourcefile + ' --fizz=3 --buzz=5 --whizz=7' + \
-                    '\n\tpython' + sourcefile + ' 3 5 7 --scope=100'
+                    '\n\tpython' + sourcefile + ' 3 5 7 --scope=100' + \
+                    '\nAUTHOR' + \
+                    '\n\tThis program made by Marslo Jiao (marslo.jiao@gmail.com)'
 
 
   def argusValidity(self, argu):
@@ -93,7 +95,6 @@ class IsValidArgus:
         exit(1)
       else:
         self.argulist = [i.strip() for i in argus.split(',')]
-        print self.argulist
     except:
       exit(0)                               # Exists by pressing Ctrl+C
 
@@ -116,9 +117,5 @@ class IsValidArgus:
     self.analysisNoptionArgus()
 
     return self.rel
-
-# ivn = IsValidArgus()
-# ivn.createRelDict()
-# print 'dictProcess.py: ', ivn.rel
 
 # vi:set tabstop=2 shiftwidth=2 shiftwidth=2:

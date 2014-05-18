@@ -42,10 +42,16 @@ class testdictProcess(unittest.TestCase):
     self.assertTrue(self.gpclass.calcPwd(3), 'Fizz')
 
   def testcalcPwd_5(self):
-    self.assertTrue(self.gpclass.calcPwd(3), 'Buzz')
+    self.assertTrue(self.gpclass.calcPwd(5), 'Buzz')
 
   def testcalcPwd_7(self):
-    self.assertTrue(self.gpclass.calcPwd(3), 'Whizz')
+    self.assertTrue(self.gpclass.calcPwd(7), 'Whizz')
+
+  def testcalcPwd_13(self):
+    self.assertTrue(self.gpclass.calcPwd(13), 'Buzz')
+
+  def testcalcPwd_15(self):
+    self.assertTrue(self.gpclass.calcPwd(15), 'FizzBuzz')
 
     # defaultlist = {'scope': 100, 'buzz': 5, 'whizz': 7, 'fizz': 3}
     # self.assertEqual(self.dpclass.createRelDict(), defaultlist, 'createRelDict Failed')
