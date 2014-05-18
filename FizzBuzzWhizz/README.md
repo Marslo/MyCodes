@@ -6,7 +6,8 @@
     - [Input argus way](https://github.com/Marslo/Others/tree/master/FizzBuzzWhizz#input-argus)
     - [Run with argus way](https://github.com/Marslo/Others/tree/master/FizzBuzzWhizz#run-with-argus)
     - [UT](https://github.com/Marslo/Others/tree/master/FizzBuzzWhizz#ut)
-- [Need to be improved]()
+- [Need to be improved](https://github.com/Marslo/Others/tree/master/FizzBuzzWhizz#need-to-be-improved)
+
 ### How to run my program
 - Check the Help information | [screenshot](https://github.com/Marslo/Others/tree/master/FizzBuzzWhizz#help)
     <pre><code>┌─ (marslo@MJ ~/FizzBuzzWhizz/V1.0) ->
