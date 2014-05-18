@@ -1,5 +1,14 @@
+### Content
+- [How to run the program](https://github.com/Marslo/Others/tree/master/FizzBuzzWhizz#how-to-run-my-program)
+- [How to run the Unit test](https://github.com/Marslo/Others/tree/master/FizzBuzzWhizz#how-to-run-the-unit-test)
+- [Screenshots](https://github.com/Marslo/Others/tree/master/FizzBuzzWhizz#truth-no-picture-no-truth)
+    - [--help](https://github.com/Marslo/Others/tree/master/FizzBuzzWhizz#help)
+    - [Input argus way](https://github.com/Marslo/Others/tree/master/FizzBuzzWhizz#input-argus)
+    - [Run with argus way](https://github.com/Marslo/Others/tree/master/FizzBuzzWhizz#run-with-argus)
+    - [UT](https://github.com/Marslo/Others/tree/master/FizzBuzzWhizz#ut)
+- [Need to be improved]()
 ### How to run my program
-- Check the Help information | [screenshot]()
+- Check the Help information | [screenshot](https://github.com/Marslo/Others/tree/master/FizzBuzzWhizz#help)
     <pre><code>┌─ (marslo@MJ ~/FizzBuzzWhizz/V1.0) ->
     └─ $ python mainFizzBuzzWhizz.py  --help
     NAME
@@ -27,7 +36,7 @@
             This program made by Marslo Jiao (marslo.jiao@gmail.com)
     </code></pre>
 
-- Input the argus :
+- Input the argus | [screenshot](https://github.com/Marslo/Others/tree/master/FizzBuzzWhizz#input-argus)
     - <kbd>Enter</kbd>: default value
         <pre><code>┌─ (marslo@MJ ~/FizzBuzzWhizz/V1.0) ->
         └─ $ python mainFizzBuzzWhizz.py
@@ -41,7 +50,7 @@
         3,5,8
         </code></pre>
 
-- Run program with argus
+- Run program with argus | [screenshot](https://github.com/Marslo/Others/tree/master/FizzBuzzWhizz#run-with-argus)
     - Argus with opts
         <pre><code>┌─ (marslo@MJ ~/FizzBuzzWhizz/V1.0) ->
         └─ $ python mainFizzBuzzWhizz.py --fizz=3 --buzz=5 --whizz=7
@@ -57,7 +66,7 @@
         └─ $ python mainFizzBuzzWhizz.py 3 6 9
         </code></pre>
 
-### How to run the Unit Test
+### How to run the Unit Test | [screenshot](https://github.com/Marslo/Others/tree/master/FizzBuzzWhizz#ut)
     <pre><code>┌─ (marslo@MJ ~/FizzBuzzWhizz/V1.0) ->
     └─ $ python testFizzBuzzWhizz.py 
     testargusValidity_fail (__main__.testdictProcess) ... Error:
@@ -96,3 +105,6 @@
 
 #### UT
 ![ut](https://github.com/Marslo/Others/blob/master/FizzBuzzWhizz/Screenshots/ut.png?raw=true)
+
+### Need to be improved
+- UT: Disable the _failed print_
