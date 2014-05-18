@@ -1,5 +1,5 @@
 ### How to run my program
-- Check the Help information
+- Check the Help information | [screenshot]()
     <pre><code>┌─ (marslo@MJ ~/FizzBuzzWhizz/V1.0) ->
     └─ $ python mainFizzBuzzWhizz.py  --help
     NAME
@@ -27,11 +27,19 @@
             This program made by Marslo Jiao (marslo.jiao@gmail.com)
     </code></pre>
 
-- Input the argus (<kbd>Enter</kbd>: default value):
-    <pre><code>┌─ (marslo@MJ ~/FizzBuzzWhizz/V1.0) ->
-    └─ $ python mainFizzBuzzWhizz.py
-    Please input three Positive Integers divided by comma (default is 3,5,7). [Enter. UnitTest press <Enter>]:
-    </code></pre>
+- Input the argus :
+    - <kbd>Enter</kbd>: default value
+        <pre><code>┌─ (marslo@MJ ~/FizzBuzzWhizz/V1.0) ->
+        └─ $ python mainFizzBuzzWhizz.py
+        Please input three Positive Integers divided by comma (default is 3,5,7). [Enter. UnitTest press <Enter>]:
+        </code></pre>
+
+    - Input the new values:
+        <pre><code>┌─ (marslo@MJ ~/FizzBuzzWhizz/V1.0) ->
+        └─ $ python mainFizzBuzzWhizz.py
+        Please input three Positive Integers divided by comma (default is 3,5,7). [Enter. UnitTest press <Enter>]:
+        3,5,8
+        </code></pre>
 
 - Run program with argus
     - Argus with opts
@@ -44,7 +52,7 @@
         └─ $ python mainFizzBuzzWhizz.py --fizz=3 --buzz=4
         </code></pre>
 
-    - Arugs without opt:
+    - Argus without opt:
         <pre><code>┌─ (marslo@MJ ~/FizzBuzzWhizz/V1.0) ->
         └─ $ python mainFizzBuzzWhizz.py 3 6 9
         </code></pre>
@@ -77,3 +85,14 @@
     </code></pre>
 
 ### Truth (No picture no truth)
+#### help
+![help](https://github.com/Marslo/Others/blob/master/FizzBuzzWhizz/Screenshots/help.png?raw=true)
+
+#### Input argus
+![inputargus](https://github.com/Marslo/Others/blob/master/FizzBuzzWhizz/Screenshots/inputargus.png?raw=true)
+
+#### Run with argus
+![withargus](https://github.com/Marslo/Others/blob/master/FizzBuzzWhizz/Screenshots/withargus.png?raw=true)
+
+#### UT
+![ut](https://github.com/Marslo/Others/blob/master/FizzBuzzWhizz/Screenshots/ut.png?raw=true)
