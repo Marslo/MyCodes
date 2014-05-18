@@ -6,6 +6,7 @@
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 FizzBuzzWhizz	generatePasswd.py	/^class FizzBuzzWhizz:$/;"	c
 IsValidArgus	dictProcess.py	/^class IsValidArgus:$/;"	c
+__init__	Test/myclass.py	/^  def __init__(self):$/;"	m	class:myclass
 __init__	dictProcess.py	/^  def __init__(self):$/;"	m	class:IsValidArgus
 __init__	generatePasswd.py	/^  def __init__(self, rel, passwd):$/;"	m	class:FizzBuzzWhizz
 analysisArgus	dictProcess.py	/^  def analysisArgus(self, argu):$/;"	m	class:IsValidArgus
@@ -13,8 +14,35 @@ analysisNoptionArgus	dictProcess.py	/^  def analysisNoptionArgus(self):$/;"	m	cl
 argusValidity	dictProcess.py	/^  def argusValidity(self, argu):$/;"	m	class:IsValidArgus
 calcPwd	generatePasswd.py	/^  def calcPwd(self, item):$/;"	m	class:FizzBuzzWhizz
 createRelDict	dictProcess.py	/^  def createRelDict(self):$/;"	m	class:IsValidArgus
-fbw	mainFizzBuzzWhizz.py	/^    fbw = FizzBuzzWhizz(vargu.rel, vargu.passwd)$/;"	v
+fbw	mainFizzBuzzWhizz.py	/^  fbw = generatePasswd.FizzBuzzWhizz(vargu.rel, vargu.passwd)$/;"	v
 generatePwdList	generatePasswd.py	/^  def generatePwdList(self):$/;"	m	class:FizzBuzzWhizz
 inputArgusProcess	dictProcess.py	/^  def inputArgusProcess(self):$/;"	m	class:IsValidArgus
+myclass	Test/myclass.py	/^class myclass:$/;"	c
+myclasstest	Test/myclasstest.py	/^class myclasstest(unittest.TestCase):$/;"	c
+mytest	Test/mycasetest.py	/^class mytest(unittest.TestCase):$/;"	c
 optValidity	dictProcess.py	/^  def optValidity(self, opt):$/;"	m	class:IsValidArgus
-vargu	mainFizzBuzzWhizz.py	/^    vargu = IsValidArgus()$/;"	v
+setUp	Test/mycasetest.py	/^  def setUp(self):$/;"	m	class:mytest
+setUp	Test/myclasstest.py	/^  def setUp(self):$/;"	m	class:myclasstest
+setUp	testFizzBuzzWhizz.py	/^  def setUp(self):$/;"	m	class:testdictProcess
+sub	Test/mycase.py	/^def sub(x, y):$/;"	f
+sub	Test/myclass.py	/^  def sub(self, x, y):$/;"	m	class:myclass
+suite	testFizzBuzzWhizz.py	/^  suite = unittest.TestLoader().loadTestsFromTestCase(testdictProcess)$/;"	v
+sum	Test/mycase.py	/^def sum(x, y):$/;"	f
+sum	Test/myclass.py	/^  def sum(self, x, y):$/;"	m	class:myclass
+tearDown	Test/mycasetest.py	/^  def tearDown(self):$/;"	m	class:mytest
+tearDown	Test/myclasstest.py	/^  def tearDown(self):$/;"	m	class:myclasstest
+tearDown	testFizzBuzzWhizz.py	/^  def tearDown(self):$/;"	m	class:testdictProcess
+testargusValidity_fail	testFizzBuzzWhizz.py	/^  def testargusValidity_fail(self):$/;"	m	class:testdictProcess
+testargusValidity_ok	testFizzBuzzWhizz.py	/^  def testargusValidity_ok(self):$/;"	m	class:testdictProcess
+testcalcPwd_3	testFizzBuzzWhizz.py	/^  def testcalcPwd_3(self):$/;"	m	class:testdictProcess
+testcalcPwd_5	testFizzBuzzWhizz.py	/^  def testcalcPwd_5(self):$/;"	m	class:testdictProcess
+testcalcPwd_7	testFizzBuzzWhizz.py	/^  def testcalcPwd_7(self):$/;"	m	class:testdictProcess
+testcreateRelDict	testFizzBuzzWhizz.py	/^  def testcreateRelDict(self):$/;"	m	class:testdictProcess
+testdictProcess	testFizzBuzzWhizz.py	/^class testdictProcess(unittest.TestCase):$/;"	c
+testoptValidity_fail	testFizzBuzzWhizz.py	/^  def testoptValidity_fail(self):$/;"	m	class:testdictProcess
+testoptValidity_ok	testFizzBuzzWhizz.py	/^  def testoptValidity_ok(self):$/;"	m	class:testdictProcess
+testsub	Test/mycasetest.py	/^  def testsub(self):$/;"	m	class:mytest
+testsub	Test/myclasstest.py	/^  def testsub(self):$/;"	m	class:myclasstest
+testsum	Test/mycasetest.py	/^  def testsum(self):$/;"	m	class:mytest
+testsum	Test/myclasstest.py	/^  def testsum(self):$/;"	m	class:myclasstest
+vargu	mainFizzBuzzWhizz.py	/^  vargu = dictProcess.IsValidArgus()$/;"	v
