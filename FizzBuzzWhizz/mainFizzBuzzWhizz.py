@@ -10,15 +10,14 @@
 #              0.0.1 | Marslo | init
 # =============================================================================
 
-from dictProcess import IsValidArgus
-from generatePasswd import FizzBuzzWhizz
+import dictProcess
+import generatePasswd
 
 if __name__ == '__main__':
-    vargu = IsValidArgus()
+    vargu = dictProcess.IsValidArgus()
     vargu.createRelDict()
-    print 'main: ', vargu.rel
 
-    fbw = FizzBuzzWhizz(vargu.rel, vargu.passwd)
+    fbw = generatePasswd.FizzBuzzWhizz(vargu.rel, vargu.passwd)
     fbw.generatePwdList()
 
-
+# vi:set tabstop=2 shiftwidth=2 shiftwidth=2:
